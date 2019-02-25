@@ -11,17 +11,16 @@ One of the engineers recommended you for the task, and you proposed to develop t
 * The customers are coming up with many ideas, but after long sessions of coming back and forth, both parties have agreed on a set of functionalities fit for an MVP (minimum viable product).
 * Wine tasters must be able to login to the application using at least one single sign-on provider (SSO)
 * Wine tasters, can only log in if they’re register for the wine tasting session, this is coordinated externally to the system, via phone and email. And each taster receive an unique code (key) that mean they’ll be part of that tasting session via email. 
-* Once they login, a wine taster, after careful deliberation and having received the required information from an enologist, will be able to rate a wine on the following aspects (with a scale of 1 to 5 starts (half stars are allowed):
+* Once they login, a wine taster, after careful deliberation and having received the required information from an enologist, will be able to rate a wine on the following aspects (with a scale of 1 to 5 stars, 1 star being the lowest ranking and 5 the highest):
     * Aromas, Flavors & Structure
     * Food-Friendliness (Soloist, Limited, Selective, Versatile, Impeccable)
     * Value (Overpriced, A Little Pricey, As Expected, Very Good, Exceptional).
     * Additionally they can submit Tasting Notes as a free text to provide additional feedback on the wine. 
-
 
  
 ## Additional considerations (Extra value if implemented) ##
 * The enologist must be able to start and finish a wine tasting session.
-* After a wine tasting the system must generate a report indicating the overall rating of the wines (based on the three criterias specified by the tasters) and signal the most popular ones.
+* After a wine tasting the system must generate a report indicating the overall rating of the wines (based on the average of the three criteria specified by the tasters) and signal the most popular ones.
 
 
 ## Suggested DB schema ##
